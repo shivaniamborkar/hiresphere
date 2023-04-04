@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine, text
+import os 
 
-db_connection_string = "mysql+pymysql://n3zy5dlc43awi5gmdyy7:pscale_pw_u2pmiuCIPgGGT6hVNuOhyK0C2sBVv901QclLPVwoqRm@aws.connect.psdb.cloud/hiresphere?charset=utf8mb4"
+db_connection_string = os.getenv("DB_CONNECTION_STRING")
 engine = create_engine(
     db_connection_string,
     connect_args = {
