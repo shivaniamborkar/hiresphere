@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Application submitted</title>
+            {% include 'bootstrap.html' %}
+    </head>
+    <body>
+        {% include 'nav.html' %}
+        {% include 'banner.html' %}
+        <div class="container">
+            <h1 class="text-center mt-4 mb-4">HireSphere</h1>
+            <p>Your application for the role of <b>{{job['title']}}</b> at hiresphere has been submitted!</p>
+        <b>Full Name</b>
+        <div class="mb-2">{{application['full_name']}}</div>
+
+        <b>Email</b>
+        <div class="mb-2">{{application['email']}}</div>
+
+        <b>LinkedIn URL</b>
+        <div class="mb-2">{{application['linkedin_url']}}</div>
+
+        <b>Education</b>
+        <div class="mb-2">{{application['education']}}</div>
+
+        <b>Work Experience</b>
+        <div class="mb-2">{{application['work_experience']}}</div>
+
+        <b>Resume URL</b>
+        <div class="mb-2">{{application['resume_url']}}</div>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-primary btn-large">Contact Us</button>
+            <p class="mt-4">&copy; 2023 Job Career Website. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>
